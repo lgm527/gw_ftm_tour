@@ -1,3 +1,9 @@
+## George Washington & NYC
+
+This project is to help me study a new tour I will be presenting every weekend in February in honor of President's day 2020 at FTM.
+
+## Now about the code...
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
