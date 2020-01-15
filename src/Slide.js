@@ -1,16 +1,16 @@
 import React from 'react';
+import './styles/App.css';
 
 function Slide(props) {
 
-
     return(
-      <div>
+      <div className="Slide">
         <h3>
-        {/*props.key*/}
+        {props.current.currentSlideTitle}
         </h3>
 
         <div>
-        {/*props.value*/}
+        {props.current.currentSlideNum}
         </div>
       </div>
     )

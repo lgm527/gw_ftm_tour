@@ -16,7 +16,7 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 25%;
+  margin: 5% 25%;
   height: 50%;
   width: 50%;
 }
@@ -29,6 +29,12 @@ header {
 
 .Navigation > span {
   cursor: pointer;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: 5% 25%;
+}
+
+.Welcome, .Slide {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10%;
 }
