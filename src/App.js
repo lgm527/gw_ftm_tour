@@ -1,26 +1,48 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import tour from './tourScript.js';
+import Slide from './Slide.js';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default class App extends React.Component {
+
+  state = {
+    script: tour,
+    current: null,
+    slideNum: 0
+  }
+
+  componentDidMount() {
+    console.log(this.state.script);
+  }
+
+  prev() {
+
+  }
+
+  next() {
+
+  }
+
+  render() {
+    return(
+        <div className="App">
+
+          <div className="Content">
+            <header>
+            George Washington & NYC
+            </header>
+
+            <Slide />
+
+            <div className="Navigation">
+              <span onClick={this.prev}>prev</span>
+              <span onClick={this.next}>next</span>
+            </div>
+
+          </div>
+
+        </div>
+    )
+  }
+
 }
-
-export default App;
