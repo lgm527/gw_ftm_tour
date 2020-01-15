@@ -1,18 +1,16 @@
 import React from 'react';
-import './App.css';
-import tour from './tourScript.js';
+import './styles/App.css';
+import { tour } from './tourScript.js';
 import Slide from './Slide.js';
+import ftmLogo from './assets/ftmlogo.png';
 
 export default class App extends React.Component {
 
   state = {
     script: tour,
     current: null,
-    slideNum: 0
-  }
-
-  componentDidMount() {
-    console.log(this.state.script);
+    slideTitle: null,
+    slideNum: 0,
   }
 
   prev() {
@@ -24,10 +22,12 @@ export default class App extends React.Component {
   }
 
   render() {
+    console.log(this.state.script);
     return(
         <div className="App">
 
           <div className="Content">
+          <img src={ftmLogo} alt='ftmLogo'/>
             <header>
             George Washington & NYC
             </header>

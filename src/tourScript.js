@@ -1,4 +1,4 @@
-const script = {
+const tour = {
   'STOP #1 Flag Gallery: Theme Introduction': [
     'New York City was the stage for many of George Washington’s career trials and triumphs. Shortly after the Continental Congress agreed to independence in 1776, the General suffered his worst military defeat within the current city limits. Throughout the Revolution GW sought to regain New York from British Occupation, but his re-entry into the city would not occur until British evacuation on November 25th 1783. On December 4th, Washington bid farewell to his officers and public service in the Long Room of Fraunces Tavern. Yet, New York City beckoned him back into public life as Federal Hall (at the intersection of Broad and Wall St.) served as his inauguration site and the city as the nation’s new temporary capital in 1789. Throughout this tour we will discuss Washington’s various visits to the city and how his experiences within New York City and around, ultimately shaped and defined his public career.'
   ],
@@ -96,3 +96,5 @@ const script = {
     'His dealings with New York impacted his public career in some shape or form- from young soldier, seasoned General, and finally President of the United States. Most importantly as seen by the room we are standing in, Washington’s restraint and solemnity throughout his public career: crossing the East River in the midst of defeat, the creation of an intelligence ring throughout New York, the farewell speech, stepping out of civilian life to lead the nation- created an image of greatness. “He was the man who could have been a king but refused a crown and saved a republic.”'
   ]
 }
+
+export { tour };

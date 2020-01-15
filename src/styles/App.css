@@ -27,7 +27,8 @@ header {
   justify-content: space-evenly;
 }
 
-.Navigation < span {
-  padding: 5%;
+.Navigation > span {
   cursor: pointer;
+  margin-left: 25%;
+  margin-right: 25%;
 }
