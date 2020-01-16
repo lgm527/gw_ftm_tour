@@ -1,63 +1,85 @@
 import React from 'react';
 import './styles/App.css';
-import { tour } from './tourScript.js';
 import Slide from './Slide.js';
 import ftmLogo from './assets/ftmlogo.png';
 import Welcome from './Welcome.js';
-
-const TITLES = Object.keys(tour);
-const SCRIPT = tour;
+import { tour } from './tour.js';
 
 export default class App extends React.Component {
 
   state = {
-    current: {
-      currentSlideTitle: null,
-      titleNum: 0,
-      currentSlideNum: null,
-      slideNum: 0,
-    }
+    page: null
   }
 
   prev = () => {
-    if(!this.state.current.currentSlideTitle) {
+    let pageNum = this.state.page
+    if (!pageNum || pageNum === 0) {
       return null;
     } else {
-      //logic for handling and rendering previously rendered slide
+      this.setState({
+        page: pageNum-1
+      })
     }
   }
 
   next = () => {
-    if(!this.state.current.currentSlideTitle) {
+    let pageNum = this.state.page
+    if (pageNum === null) {
       this.setState({
-        current: {
-          currentSlideTitle: TITLES[0],
-          currentSlideNum: SCRIPT[TITLES[0]][0],
-        }
+        page: 0
       })
+    } else if (pageNum === 75) {
+      return null;
     } else {
-      let slidesLength = SCRIPT[TITLES[0]]
-      //logic for handling next slide and next title of slides
+      this.setState({
+        page: pageNum+1
+      })
     }
   }
 
+  begin = () => {
+    this.setState({
+      page: 0
+    })
+  }
+
+  end = () => {
+    this.setState({
+      page: 75
+    })
+  }
+
+  reset = () => {
+    this.setState({
+      page: null
+    })
+  }
+
   render() {
-    console.log( this.state.current );
+
     return(
         <div className="App">
 
           <div className="Content">
+          <div className="Top">
           <img src={ftmLogo} alt='ftmLogo'/>
-            <header>
+            <header onClick={this.reset}>
             George Washington & NYC
             </header>
 
-            { this.state.current.currentSlideTitle ? <Slide current={this.state.current}/> : <Welcome />}
+            <h3>{this.state.page === null ? 0 : this.state.page+1} / 76</h3>
 
             <div className="Navigation">
+              <span onClick={this.begin}>begin</span>
               <span onClick={this.prev}>prev</span>
               <span onClick={this.next}>next</span>
+              <span onClick={this.end}>end</span>
             </div>
+
+          </div>
+
+            { this.state.page !== null ? <Slide info={tour[this.state.page]}/> : <Welcome />}
+
 
           </div>
 

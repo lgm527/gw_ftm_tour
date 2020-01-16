@@ -1,20 +1,19 @@
 import React from 'react';
 import './styles/App.css';
 
-function Slide(props) {
+function SlideContainer(props) {
 
     return(
-      <div className="Slide">
-        <h3>
-        {props.current.currentSlideTitle}
-        </h3>
 
-        <div>
-        {props.current.currentSlideNum}
-        </div>
+      <div className="Slides">
+
+      <h3>{props.info.title}</h3>
+
+      <p>{props.info.slide}</p>
+
       </div>
     )
 
 }
 
-export default Slide;
+export default SlideContainer;
