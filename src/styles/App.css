@@ -4,10 +4,11 @@
   width: 100%;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 header {
-  font-size: calc(10px + 2vmin);
+  font-size: calc(20px + 2vmin);
 }
 
 .Content {
@@ -16,9 +17,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 5% 25%;
-  height: 50%;
-  width: 50%;
+  margin: 1% 25%;
+  min-height: 99%;
+  min-width: 240px;
 }
 
 .Navigation {
