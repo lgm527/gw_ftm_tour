@@ -9,7 +9,7 @@ export default class App extends React.Component {
 
   state = {
     page: null,
-    windowWidth: null
+    windowWidth: document.body.clientWidth
   }
 
   componentDidMount() {
@@ -73,14 +73,15 @@ export default class App extends React.Component {
     return(
         <div className="App" style={{
           width: this.state.windowWidth > this.mediaQuery.phone
-          ? '50%'
+          ? '60%'
           : '98%',
           alignItems: 'center',
           textAlign: 'center',
           justifyContent: 'center',
           margin: this.state.windowWidth > this.mediaQuery.phone
-          ? '5% 10%'
+          ? '1% auto'
           : '1%',
+          height: '98%',
         }}>
 
           <div className="Content">
