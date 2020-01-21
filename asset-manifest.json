@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/gw_ftm_tour/static/css/main.d10d05b1.chunk.css",
+    "main.js": "/gw_ftm_tour/static/js/main.73b891c5.chunk.js",
+    "main.js.map": "/gw_ftm_tour/static/js/main.73b891c5.chunk.js.map",
+    "runtime-main.js": "/gw_ftm_tour/static/js/runtime-main.5a3bcfcf.js",
+    "runtime-main.js.map": "/gw_ftm_tour/static/js/runtime-main.5a3bcfcf.js.map",
+    "static/js/2.aaacabdf.chunk.js": "/gw_ftm_tour/static/js/2.aaacabdf.chunk.js",
+    "static/js/2.aaacabdf.chunk.js.map": "/gw_ftm_tour/static/js/2.aaacabdf.chunk.js.map",
+    "index.html": "/gw_ftm_tour/index.html",
+    "precache-manifest.8f9a67897ac01665eb98d8403a1bf085.js": "/gw_ftm_tour/precache-manifest.8f9a67897ac01665eb98d8403a1bf085.js",
+    "service-worker.js": "/gw_ftm_tour/service-worker.js",
+    "static/css/main.d10d05b1.chunk.css.map": "/gw_ftm_tour/static/css/main.d10d05b1.chunk.css.map",
+    "static/js/2.aaacabdf.chunk.js.LICENSE": "/gw_ftm_tour/static/js/2.aaacabdf.chunk.js.LICENSE",
+    "static/media/ftmlogo.png": "/gw_ftm_tour/static/media/ftmlogo.a9b00e21.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a3bcfcf.js",
+    "static/js/2.aaacabdf.chunk.js",
+    "static/css/main.d10d05b1.chunk.css",
+    "static/js/main.73b891c5.chunk.js"
+  ]
+}
