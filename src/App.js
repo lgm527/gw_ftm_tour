@@ -8,8 +8,21 @@ import { tour } from './tour.js';
 export default class App extends React.Component {
 
   state = {
-    page: null
+    page: null,
+    windowWidth: null
   }
+
+  componentDidMount() {
+    window.addEventListener('resize', () => {
+      this.setState({windowWidth: document.body.clientWidth})
+    });
+  }
+
+  mediaQuery = {
+    desktop: 1200,
+    tablet: 768,
+    phone: 576,
+  };
 
   prev = () => {
     let pageNum = this.state.page
@@ -58,7 +71,17 @@ export default class App extends React.Component {
   render() {
 
     return(
-        <div className="App">
+        <div className="App" style={{
+          width: this.state.windowWidth > this.mediaQuery.phone
+          ? '50%'
+          : '98%',
+          alignItems: 'center',
+          textAlign: 'center',
+          justifyContent: 'center',
+          margin: this.state.windowWidth > this.mediaQuery.phone
+          ? '5% 10%'
+          : '1%',
+        }}>
 
           <div className="Content">
           <div className="Top">
