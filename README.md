@@ -2,7 +2,9 @@
 
 This project is to help me study a new tour I will be presenting every weekend in February in honor of President's day 2020 at FTM.
 
+![GW1](https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwmobile.png)
 
+![GW2](https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwstop1.png)
 
 ## Now about the code...
 
