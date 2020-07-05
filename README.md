@@ -1,6 +1,6 @@
 ## George Washington & NYC
 
-This project is to help me study a new tour I will be presenting every weekend in February in honor of President's day 2020 at FTM.
+This project is to help me study a new tour I will be presenting every weekend in February in honor of President's day 2020 at [Fraunces Tavern Museum](https://www.frauncestavernmuseum.org/).
 
 <img src="https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwmobile.png" width="250" height="420"/>
 
