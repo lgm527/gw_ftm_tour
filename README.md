@@ -2,9 +2,9 @@
 
 This project is to help me study a new tour I will be presenting every weekend in February in honor of President's day 2020 at FTM.
 
-![GW1](https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwmobile.png){:height="50%" width="50%"}
+<img src="https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwmobile.png" width="250" height="420"/>
 
-![GW2](https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwstop1.png){:height="50%" width="50%"}
+<img src="https://raw.githubusercontent.com/lgm527/gw_ftm_tour/master/src/assets/gwstop1.png" width="250" height="420"/>
 
 ## Now about the code...
 
